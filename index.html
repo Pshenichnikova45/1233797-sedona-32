@@ -5,20 +5,23 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="page-body">
-    <header class="main-header">
-      <h1>Седона</h1>
+  <body>
 
+    <header class="page-header">
+      <!--Главный заголовок -->
+      <h1 class="visually-hidden">Седона</h1>
+
+      <nav class="navigation">
+        <!-- Лого -->
       <img src="logo.jpg" width="138" height="70" alt="Логотип Седона">
 
-      <nav class="main-navigation">
 
-        <ul class="site-navigation">
-          <li><a href="blank.html">Главная</a></li>
-          <li><a href="blank.html">О Седоне</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-          <li><a href="catalog.html">Поиск</a></li>
-          <li><a href="favourites.html">Избранное</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="blank.html">Главная</a></li>
+          <li class="navigation-item"><a href="blank.html">О Седоне</a></li>
+          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item"><a href="catalog.html">Поиск</a></li>
+          <li class="navigation-item"><a href="favourites.html">Избранное</a></li>
         </ul>
 
         <button class="choice">Хочу сюда!</button>
@@ -27,7 +30,7 @@
 
     </header>
 
-    <main class="center">
+    <main class="main-index">
 
       <section class="first-screen">
         <h2>Первый экран</h2>
@@ -46,6 +49,7 @@
 
       <h3>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h3>
 
+      <!--Преимущества-->
        <section class="advantages-number-1">
         <h2>Настоящий
           городок</h2>
@@ -125,6 +129,7 @@
         <h3>Большинство едет в Гранд Каньон и толпится там</h3>
       </section>
 
+      <!--Поиск гостиницы-->
      <section class="hotel-search">
      <h2>Заинтересовались?</h2>
 
@@ -134,6 +139,7 @@
      <button class="hotel-search-in-Sedona">Поиск гостиницы в Седоне</button>
    </section>
 
+   <!--Рассылка-->
    <section class="mailing">
      <h2>Подпишитесь на рассылку</h2>
 
@@ -162,7 +168,7 @@
 
       <img src="icon-youtube" width="20" height="16" alt="Ютуб">
         <a class="social-button" href="#">Ютуб</a>
-    >
+
 
       <a class="contacts-phone" href="tel+78128121212">+7 (812) 812-12-12</a>
 

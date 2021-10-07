@@ -5,20 +5,23 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="page-body">
-    <header class="main-header">
+  <body>
+
+    <header class="page-header">
+      <!--Главный заголовок-->
       <h1>Седона</h1>
 
-      <img src="logo.jpg" width="138" height="70" alt="Логотип Седона">
+       <nav class="navigation">
+         <!--Лого-->
+        <a class="navigation-logo" href="index.html"></a>
+        <img src="logo.jpg" width="138" height="70" alt="Логотип Седона">
 
-      <nav class="main-navigation">
-
-        <ul class="site-navigation">
-          <li><a href="blank.html">Главная</a></li>
-          <li><a href="blank.html">О Седоне</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
-          <li><a href="catalog.html">Поиск</a></li>
-          <li><a href="favourites.html">Избранное</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="blank.html">Главная</a></li>
+          <li class="navigation-item"><a href="blank.html">О Седоне</a></li>
+          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item"><a href="catalog.html">Поиск</a></li>
+          <li class="navigation-item"><a href="favourites.html">Избранное</a></li>
         </ul>
 
         <button class="choice">Хочу сюда!</button>
@@ -27,13 +30,14 @@
 
     </header>
 
-    <main class="catalog-container">
+    <main class="main-catalog">
       <section class="filters">
         <h2>Гостиницы Седоны</h2>
       </section>
 
-      <fieldset>
-        <legend>Инфраструктура:</legend>
+      <!--Фтльтрация-->
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-legend-title">Инфраструктура:</legend>
         <ul>
           <li class="filter-option filter-checkbox">
             <input class="filter-input-checkbox filter-input" type="checkbox" name="infrastructure" value="infrastructure-swimming-pool" id="filter-swimming-pool" checked>
@@ -52,8 +56,8 @@
         </ul>
       </fieldset>
 
-      <fieldset>
-        <legend>Тип жилья:</legend>
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Тип жилья:</legend>
         <ul>
           <li class="filter-option filter-radio">
             <input class="filter-input-radio" type="radio" name="housing" value="housing-hotel" id="filter-hotel" checked>
@@ -72,8 +76,8 @@
         </ul>
       </fieldset>
 
-      <fieldset>
-        <legend>Стоимость, ₽:</legend>
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <label class="min-price">от<input type="text" name="min-price" value="0"></label>
         <label class="max-price">от<input type="text" name="max-price" value="9000"></label>
       </fieldset>
@@ -83,15 +87,26 @@
 
         <section class="sorting">
           <h2>Сортировка</h2>
+          <p>Найдено гостиниц: 38</p>
+
+          <select name="cost-hotel">
+            <option value="cheap">Сначала дешевые</option>
+          </select>
+
+          <ul class="list-view">
+            <li><a href="blank.html">Вид 1</a></li>
+            <li><a href="blank.html">Вид 2</a></li>
+            <li><a href="blank.html">Вид 3</a></li>
+          </ul>
         </section>
 
         <section class="products">
           <h2>Каталог</h2>
-          <ul class="catalog">
-            <li>Amara Resort & Spa</li>
-            <li>Desert Quail Inn</li>
-            <li>Villas at Poco Diablo</li>
-            <li>GreenTree Inn</li>
+          <ul class="catalog-list">
+            <li class="catalog-item">Amara Resort & Spa <span class="rating">Рейтинг: 8,5</span></li>
+            <li class="catalog-item">Desert Quail Inn <span class="rating">Рейтинг: 8,9</span></li>
+            <li class="catalog-item">Villas at Poco Diablo <span class="rating">Рейтинг: 9,2</span></li>
+            <li class="catalog-item">GreenTree Inn <span class="rating">Рейтинг: 9,2</span></li>
           </ul>
 
           <button class="more">Загрузить еще</button>
@@ -116,6 +131,25 @@
               <a href="#">10</a>
             </li>
         </ul>
+
+        <form>
+          <input id="number" type="number" value="4">
+        </form>
+        </section>
+
+        <!--Рассылка-->
+        <section class="mailing">
+          <h2>Подпишитесь на рассылку</h2>
+
+          <h3>Только полезная информация и никакого спама,
+           честное бойскаутское!</h3>
+
+           <form method="post" action="form.php">
+
+             <input type="text" name="e_mail" value="Ваш e-mail"><br>
+
+             <input type="submit" value="Подписаться!"><br>
+           </form>
         </section>
       </main>
 
