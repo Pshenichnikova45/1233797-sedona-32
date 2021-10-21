@@ -94,19 +94,6 @@ body {
   margin: 0 auto;
 }
 
-.advantages-group-one {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-}
-
-.advantages-group-two {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-}
-
-
 
 /* Button */
 .button {
@@ -159,6 +146,9 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding: ;
+}
+
 }
 
 /* Title */
@@ -209,6 +199,18 @@ body {
   color: #333333;
   background: rgba(131, 179, 211, 0.12);
 }
+.advantages-group-one {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.advantages-group-two {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 
 /* Hotel search */
 .hotel-search {
