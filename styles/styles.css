@@ -146,7 +146,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  padding: ;
+
 }
 
 }
@@ -209,6 +209,12 @@ body {
   display: flex;
   justify-content: space-between;
 
+}
+
+p {
+  width: 250px;
+  height: 73px;
+  padding: 75px;
 }
 
 
