@@ -40,6 +40,18 @@ body {
 }
 
 
+.visually2-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 /* Pages */
 
 .page-header {
@@ -48,7 +60,15 @@ body {
 
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .navigation-link {
+  display: block;
+  padding: 20px 33px;
   font-family: PT Sans, sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -59,21 +79,25 @@ body {
   text-transform: uppercase;
 }
 
-.navigation {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-}
 
 .navigation-list {
-  width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 300px;
-  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .main-container {
@@ -211,11 +235,20 @@ body {
 
 }
 
-p {
+.p-group-one {
   width: 250px;
-  height: 73px;
-  padding: 75px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 79px;
 }
+
+.p-group-two {
+  width: 250px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 77px;
+}
+
 
 
 /* Hotel search */
