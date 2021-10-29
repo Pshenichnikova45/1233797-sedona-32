@@ -66,6 +66,14 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  width: 138px;
+  height: 70px;
+  justify-content: center;
+
+}
+
+
 .navigation-link {
   display: block;
   padding: 20px 33px;
@@ -86,7 +94,7 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style-type: none
 }
 
 .navigation-user {
