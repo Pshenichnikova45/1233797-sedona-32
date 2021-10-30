@@ -94,7 +94,9 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
-  list-style-type: none
+  list-style-type: none;
+  justify-content: start;
+
 }
 
 .navigation-user {
@@ -106,6 +108,7 @@ body {
   list-style-type: none;
   min-width: 18px;
   min-height: 18px;
+  justify-content: end;
 }
 
 .main-container {
